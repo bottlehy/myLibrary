@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后台登陆</title>
+<link rel="stylesheet" type="text/css"
+	href="easyui/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
+<script src="easyui/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/jquery.easyui.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"
+	charset="utf-8"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<style type="text/css">
+	table{
+		position: relative;
+		left:45px;
+		top:45px;
+	}
+	table td{
+		padding:5px;
+	}
+</style>
+</head>
+<body>
+	<div id="login">
+		<form action="" method="pose" id="f1" name="f1">
+			<table>
+				<tr>
+					<td>用户名：</td>
+					<td><input type="text" id="uname" name="uname" class="easyui-validatebox" data-options="required:true" missingMessage="请输入账号"/></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input type="password" id="upass" name="upass" class="easyui-validatebox" data-options="required:true" missingMessage="请输入密码"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

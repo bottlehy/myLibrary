@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户列表</title>
+<link rel="stylesheet" type="text/css"
+	href="easyui/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
+<script src="easyui/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/jquery.easyui.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"
+	charset="utf-8"></script>
+<script type="text/javascript" src="js/um.js"></script>
+<style type="text/css">
+	#t2{
+		position:relative;
+		left:70px;
+		top:20px;
+	}
+	#t2 td{
+		padding:5px;
+	}
+	#t2 tr:first-child{
+		text-align:right;
+	}
+</style>
+</head>
+<body>
+	用户列表
+	<hr />
+	<table id="t1">
+
+	</table>
+	<div id="d1">
+		<form action="" method="post">
+			<table id="t2">
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" id="uname" name="uname" class="easyui-textbox" data-options="iconCls:'icon-man'"/></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" id="upassword" name="upassword" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>性别:</td>
+					<td>
+						<input type="radio" id="man" name="sex" value="男" checked="checked"/>男
+						<input type="radio" id="woman" name="sex" value="女"/>女
+					</td>
+				</tr>
+				<tr>
+					<td>邮箱:</td>
+					<td><input type="text" id="email" name="email" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>手机号:</td>
+					<td><input type="text" id="utel" name="utel" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>地址:</td>
+					<td><input type="text" id="uaddress" name="uaddress" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>状态:</td>
+					<td><input type="text" id="ustate" name="ustate" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>角色:</td>
+					<td><select name="uroleid" id="uroleid" >
+					<option value="1" id="s1">主角</option>
+					<option value="2" id="s2">配角</option>
+					</select></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

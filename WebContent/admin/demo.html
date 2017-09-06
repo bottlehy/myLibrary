@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="easyui/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
+<script src="easyui/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/jquery.easyui.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"
+	charset="utf-8"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+<style type="text/css">
+	#t2{
+		position:relative;
+		left:20px;
+		top:20px;
+	}
+	#t2 td{
+		padding:5px;
+	}
+	#t2 tr td:first-child{
+		text-align:right;
+	}
+</style>
+</head>
+<body>
+	商品分类
+	<hr/>
+	<table id="tab"></table>
+	<div id="d1">
+		<form action="" method="post">
+		<table id="t2">
+			<tr><td>分类编号:</td><td><input type="text" id="cid" name="cid" class="easyui-textbox"/></td></tr>
+			<tr><td>分类名:</td><td><input type="text" id="cname" name="cname" class="easyui-textbox"/></td></tr>
+		</table>
+		</form>
+	</div>
+</body>
+</html>

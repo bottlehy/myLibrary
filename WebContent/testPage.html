@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="pagination/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="pagination/mricode.pagination.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="pagination/mricode.pagination.css"></link>
+<script type="text/javascript">
+	$(function() {
+		$("#pagination").pagination({
+			pageSize : 10,
+			firstBtnText : "首页",
+			lastBtnText : "尾页",
+			prevBtnText : "上一页",
+			nextBtnText : "下一页",
+			showJump : true,
+			showPageSizes : true,
+			pageSizeItems : [ 10, 20, 30 ],
+			remote : {
+				url : "testpage.do",
+				totalName : "totalnumber",
+				success : function(pageinfo) {
+					$("tr").length=1;
+					console.log($("tr").length);
+					var ul;
+					$(pageinfo.data).each(function(index, good) {
+						ul += "<tr>";
+						ul += "<td>" + good.gtitle + "</td>";
+						ul += "<td>" + good.gauthor + "</td>";
+						ul += "<td>" + good.gsaleprice + "</td>";
+						ul += "<td>" + good.ginprice + "</td>";
+						ul += "<td>" + good.gclicks + "</td>";
+						ul += "<td>" + good.pname + "</td>";
+						ul += "</tr>";
+					})
+					$("table").append(ul);
+				}
+			}
+		})
+
+	})
+</script>
+<style type="text/css">
+	table{
+			border: 1px solid black;
+			padding: 5px;
+			width:500px;
+		}
+	table td{
+	   border:1px solid black;
+	}
+</style>
+</head>
+<body>
+	<div id="content">
+		<table>
+		</table>
+	</div>
+	<div id="pagination"></div>
+</body>
+</html>

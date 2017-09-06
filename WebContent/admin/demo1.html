@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="easyui/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
+<script src="easyui/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/jquery.easyui.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"
+	charset="utf-8"></script>
+	<script type="text/javascript" src="js/demo1.js"></script>
+	<style type="text/css">
+	#t2{
+		position:relative;
+		left:70px;
+		top:20px;
+	}
+	#t2 td{
+		padding:5px;
+	}
+	#t2 tr td:first-child{
+		text-align:right;
+	}
+	#div1{
+		position:relative;
+		float:right;
+	}
+</style>
+</head>
+<body>
+	商品列表
+	<hr/>
+	<input id="ss" name="select" value="">
+	<div id="div1"><input id="sl" name="sl"></div>
+	<br/>
+	<table id="tab">
+	</table>
+	<div id="di">
+	<form action="" method="post">
+			<table id="t2">
+				<tr>
+					<td>编号:</td>
+					<td><input type="text" id="uid" name="uid" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>书名:</td>
+					<td><input type="text" id="uname" name="uname" class="easyui-textbox"/></td>
+				</tr>
+				<tr>
+					<td>作者:</td>
+					<td>
+						<input type="text" id="man" name="man" class="easyui-textbox" data-options="iconCls:'icon-man'"/>
+					</td>
+				</tr>
+				<tr>
+					<td>简介:</td>
+					<td><input type="text" id="desc" name="desc" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>售价:</td>
+					<td><input type="text" id="sale" name="sale" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>进价:</td>
+					<td><input type="text" id="in" name="in" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>点击量:</td>
+					<td><input type="text" id="click" name="click" class="easyui-textbox" /></td>
+				</tr>
+				<tr>
+					<td>分类:</td>
+					<td><input type="text" id="core" name="core" class="easyui-textbox"/></td>
+				</tr>
+				<tr>
+					<td>出版方:</td>
+					<td><input type="text" id="public" name="public" class="easyui-textbox"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+	
+</body>
+</html>

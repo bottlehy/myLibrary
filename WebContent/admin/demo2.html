@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="easyui/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
+<script src="easyui/jquery.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/jquery.easyui.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"
+	charset="utf-8"></script>
+<script type="text/javascript" src="js/demo2.js"></script>
+<style type="text/css">
+#t2 {
+	position: relative;
+	left: 70px;
+	top: 20px;
+}
+
+#t2 td {
+	padding: 5px;
+}
+
+#t2 tr td:first-child {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	商品订单
+	<hr />
+	<input id="s" name="s">
+
+	<table id="tab"></table>
+	<div id="d1">
+		<form action="" method="post">
+			<table>
+				<table id="t2">
+					<tr>
+						<td>订单编号:</td>
+						<td><input type="text" id="orderid" name="orderid"
+							class="easyui-textbox"  /></td>
+					</tr>
+					<tr>
+						<td>总价:</td>
+						<td><input type="text" id="total" name="total"
+							class="easyui-textbox" /></td>
+					</tr>
+					<tr>
+						<td>收件人:</td>
+						<td><input type="text" id="man" name="man"
+							class="easyui-textbox" data-options="iconCls:'icon-man'"/></td>
+					</tr>
+					<tr>
+						<td>订单状态:</td>
+						<td><input type="text" id="state" name="state"
+							class="easyui-textbox" /></td>
+					</tr>
+					<tr>
+						<td>订单时间:</td>
+						<td><input type="text" id="odate" name="odate"
+							class="easyui-textbox easyui-datebox"/></td>
+					</tr>
+						<td>用户ID:</td>
+						<td><input type="text" id="userid" name="userid"
+							class="easyui-textbox" /></td>
+					</tr>
+				</table>
+
+			</table>
+		</form>
+	</div>
+	<div id="d2">
+		<table id="t3"></table>
+	</div>
+</body>
+</html>
